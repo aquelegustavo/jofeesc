@@ -1,0 +1,35 @@
+.wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--branco-branco);
+  color: var(--mar);
+  padding: 1rem;
+  margin: 1rem;
+  clip-path: polygon(
+    20px 0%,
+    80% 0%,
+    100% 0,
+    100% 100%,
+    80% 100%,
+    0 100%,
+    0% 80%,
+    0% 20px
+  );
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+
+    h3 {
+      margin: 0.4rem;
+    }
+
+    span {
+      margin: 0 4px 0 2px;
+    }
+  }
+}

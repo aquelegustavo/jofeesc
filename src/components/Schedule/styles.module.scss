@@ -1,0 +1,22 @@
+.wrapper {
+  margin: 6rem 3rem;
+  text-align: center;
+
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "CostaRica";
+    margin-bottom: 2rem;
+  }
+
+  .event3 {
+    background-color: var(--mar);
+    padding: 1rem;
+    max-width: 920px;
+    margin: auto;
+  }
+
+  .nav-item {
+    background: red;
+  }
+}

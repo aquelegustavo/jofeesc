@@ -1,0 +1,84 @@
+.container {
+
+
+	.menuButton,
+	.closeButton {
+	  background: none;
+	  border: none;
+	  cursor: pointer;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+  
+	.menuButton {
+	  color: var(--mar);
+	  margin-right: 2rem;
+	}
+  
+	.iconButton {
+	  width: 2rem;
+	  height: 2rem;
+	  border-radius: 100%;
+	}
+  
+	.iconButton:hover {
+	  background: rgba($color: #000, $alpha: 0.1);
+	}
+  
+	.mask {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background-color: rgba($color: #000, $alpha: 0.4);
+	}
+  
+	.drawer {
+	  position: fixed;
+	  top: 0;
+	  right: -330px;
+	  bottom: 0;
+	  z-index: 9999;
+	  background: var(--branco-branco);
+	  border-top-left-radius: 8px;
+	  border-bottom-left-radius: 8px;
+	  padding: 24px 48px 120px 24px;
+	  overflow: hidden;
+	  overflow-y: scroll;
+	  transition: right 1s;
+	  min-width: 200px;
+  
+	  &.open {
+		right: 0px;
+	  }
+  
+	  .header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	  }
+  
+	  .nav {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		margin-top: 2rem;
+	  }
+  
+	  a {
+		color: var(--quase-preto);
+		text-decoration: none;
+  
+		&:hover {
+		  font-weight: 600;
+		}
+  
+		.icon {
+		  font-size: 18px;
+		}
+	  }
+	}
+  }

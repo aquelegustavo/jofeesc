@@ -1,0 +1,87 @@
+@import "../../styles/shadows";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 0.7rem;
+  z-index: 999;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    cursor: pointer;
+  }
+
+  .wrapper {
+    flex: 1;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: var(--branco-branco);
+    text-decoration: none;
+    padding: 0 2rem;
+
+    a {
+      color: var(--branco-branco);
+      text-decoration: none;
+      font-weight: 600;
+
+      &::before {
+        /**
+           pré definindo a largura usando um pseudoelemento 
+           invisível que tem o mesmo conteúdo e 
+           estilo do estilo de foco pai
+
+           https://stackoverflow.com/questions/556153/inline-elements-shifting-when-made-bold-on-hover
+        */
+        display: block;
+        content: attr(title);
+        font-weight: 600;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &.activeScroll {
+    @extend .shadow-3dp;
+    z-index: 10000;
+    background-color: var(--cinzinha);
+   
+
+    a{
+      color: var(--mar);
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .navContainer {
+    display: none;
+  }
+
+  .header {
+    z-index: 10000;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .drawerContainer {
+    display: none;
+  }
+}

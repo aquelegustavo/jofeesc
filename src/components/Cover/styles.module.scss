@@ -1,0 +1,112 @@
+.cover {
+  .title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: var(--branco-branco);
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.4em;
+    animation: title ease 0.8s;
+    font-family: "CostaRica";
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-size: 4rem;
+
+    @media (max-width: 960px) {
+      font-size: 4rem;
+    }
+    @media (max-width: 720px) {
+      font-size: 3rem;
+    }
+
+    @keyframes title {
+      0% {
+        letter-spacing: 1em;
+      }
+      60% {
+        letter-spacing: 0.3em;
+      }
+      100% {
+        letter-spacing: 0.4em;
+      }
+    }
+  }
+
+  .runnerContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      max-height: 100vh;
+      object-fit: cover;
+    }
+  }
+
+  .wall {
+    .face {
+      &.back {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70vw;
+        height: 60vh;
+        background-color: var(--mar);
+        -webkit-box-shadow: inset -38px -75px 89px -83px rgba(0, 0, 0, 0.77);
+        -moz-box-shadow: inset -38px -75px 89px -83px rgba(0, 0, 0, 0.77);
+        box-shadow: inset -38px -75px 89px -83px rgba(0, 0, 0, 0.77);
+
+        @media (max-width: 960px) {
+          width: 90vw;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0%;
+          top: 0%;
+          width: 300%;
+          height: 100%;
+          bottom: 0;
+          background-color: var(--aqua);
+          transform: rotate(-60deg);
+          transform-origin: left bottom;
+        }
+      }
+      &.bottom {
+        position: absolute;
+        top: 60vh;
+        right: 0;
+        width: 70vw;
+        height: 40vh;
+        background-color: var(--mar);
+        -webkit-box-shadow: inset 0px 8px 24px -14px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: inset 0px 8px 24px -14px rgba(0, 0, 0, 0.75);
+        box-shadow: inset 0px 8px 24px -14px rgba(0, 0, 0, 0.75);
+
+        @media (max-width: 960px) {
+          width: 90vw;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0%;
+        right: 0;
+        top: 0%;
+        width: 200%;
+        height: 100%;
+        bottom: 0;
+        background-color: var(--aqua);
+        transform: rotate(30deg);
+        transform-origin: left top;
+      }
+    }
+  }
+
+  
+}

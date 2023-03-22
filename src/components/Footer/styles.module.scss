@@ -1,0 +1,57 @@
+.footer {
+  padding: 4rem 1rem 1rem 1rem;
+  background: var(--mar);
+  color: var(--braco-branco);
+
+  .content{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .links {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    section{
+      margin: 2rem;
+      display: flex;
+      justify-content: start;
+      align-self: start;
+      flex-direction: column;
+      color: #fff !important;
+
+      h3{
+        font-family: "CostaRica";
+      }
+
+      .insta{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        text-decoration: none;
+        color: #fff !important;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+    color: var(--branco-branco) !important;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 0 0 0.4rem;
+    margin: 0;
+
+    a{
+      color: var(--branco-branco);
+      text-decoration: none;
+    }
+  }
+}

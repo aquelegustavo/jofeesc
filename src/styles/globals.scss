@@ -1,0 +1,23 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: var(--aqua);
+	margin: 0;
+	overflow-x: hidden;
+	font-family: "LeagueSpartan";
+}
+
+p{
+	text-indent: 32px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+:root{
+	--aqua: #00C2CB;
+	--mar: #004169;
+	--cinzinha: #ECECEC;
+	--branco-branco: #fff;
+}
