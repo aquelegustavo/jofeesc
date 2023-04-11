@@ -12,7 +12,7 @@ function Numbers() {
             <div className="card-home-about-text accent">Programação</div>
           </div>
           <div className={styles.card}>
-            <div className={styles.number}>4</div>
+            <div className={styles.number}>6</div>
             <div className="card-home-about-text">Patrocinadores</div>
           </div>
         </div>
@@ -22,7 +22,7 @@ function Numbers() {
             <div className="card-home-about-text">Palestras</div>
           </div>
           <div className={styles.card}>
-            <div className={styles.number}>9</div>
+            <div className={styles.number}>10</div>
             <div className="card-home-about-text">Palestrantes</div>
           </div>
         </div>

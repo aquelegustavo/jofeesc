@@ -7,7 +7,7 @@ function Where() {
       title: "Email",
       icon: "email",
       paragraph:
-        "Entre em contato com a organização do evento pelo email jofeesc@contato.ufsc.br",
+        "Entre em contato com a organização do evento pelo email jofeesc2023@contato.ufsc.br",
     },
     {
       title: "Endereço",

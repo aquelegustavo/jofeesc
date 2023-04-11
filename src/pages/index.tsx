@@ -7,6 +7,7 @@ import Numbers from "../components/Numbers";
 import Where from "../components/Where";
 import Footer from "../components/Footer";
 import Schedule from "../components/Schedule";
+import Sponsors from "../components/Sponsors";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -14,6 +15,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Header/>
       <Cover />
       <Numbers/>
+      <Sponsors/>
       <Schedule/>
       <Where/>
       <Footer/>

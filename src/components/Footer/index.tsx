@@ -9,7 +9,7 @@ function Footer() {
       <div className={styles.content}>
         <StaticImage
           src="../../images/logo.png"
-          alt="Corredor"
+          alt="Logo"
           placeholder="none"
           width={200}
           height={200}
@@ -17,7 +17,7 @@ function Footer() {
        <div className={styles.links}>
        <section>
           <h3>Contato</h3>
-          <span>jofeesc@contato.ufsc.br</span>
+          <span>jofeesc2023@contato.ufsc.br</span>
         </section>
         <section>
           <h3>Redes Sociais</h3>
